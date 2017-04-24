@@ -23,3 +23,8 @@ void CartoonMessages::endMessage()
               << "Implementation of pure virtual function from parent Class"
               << std::endl;
 }
+
+void CartoonMessages::mainMessage()
+{
+    std::cout <<"this is the message from non pure virtual method" << std::endl;
+}
