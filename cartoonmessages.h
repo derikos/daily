@@ -10,6 +10,7 @@ public:
     CartoonMessages();
     void startMessage();
     void endMessage();
+    void mainMessage();
 };
 
 #endif // CARTOONMESSAGES_H

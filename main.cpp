@@ -30,6 +30,7 @@ int main(int argc, char *argv[])
 
     mickeyMouse.startMessage();
     mickeyMouse.endMessage();
+    mickeyMouse.mainMessage();
 
 
     return 0;
