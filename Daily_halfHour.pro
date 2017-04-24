@@ -4,7 +4,11 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    messages.cpp
+    messages.cpp \
+    messagecentral.cpp \
+    cartoonmessages.cpp
 
 HEADERS += \
-    messages.h
+    messages.h \
+    messagecentral.h \
+    cartoonmessages.h
