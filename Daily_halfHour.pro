@@ -6,9 +6,15 @@ CONFIG -= qt
 SOURCES += main.cpp \
     messages.cpp \
     messagecentral.cpp \
-    cartoonmessages.cpp
+    cartoonmessages.cpp \
+    purerandom.cpp \
+    #derived.cpp \
+    #seccondlevel.cpp
 
 HEADERS += \
     messages.h \
     messagecentral.h \
-    cartoonmessages.h
+    cartoonmessages.h \
+    purerandom.h \
+    #derived.h \
+    #seccondlevel.h
