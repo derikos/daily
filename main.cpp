@@ -32,6 +32,8 @@ int main(int argc, char *argv[])
     mickeyMouse.endMessage();
     mickeyMouse.mainMessage();
 
+    //TODO move some of these if not most of them into a class made for testing
+
 
     return 0;
 }
