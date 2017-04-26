@@ -8,11 +8,8 @@ SOURCES += main.cpp \
     messagecentral.cpp \
     cartoonmessages.cpp \
     purerandom.cpp \
-
     derived.cpp \
     seccondlevel.cpp \
-    derived.cpp \
-    seccondlevel.cpp
     testonly.cpp
 
 HEADERS += \
