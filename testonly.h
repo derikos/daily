@@ -15,6 +15,10 @@ class TestOnly
 {
 public:
     TestOnly();
+    std::string defaultMessage;
+    void testCartoonMessages(std::string name = "Stugg");
+    void userMessage();
+    void userMessage(std::string defaultMsg);
 };
 
 #endif // TESTONLY_H
