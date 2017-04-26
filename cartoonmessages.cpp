@@ -24,7 +24,7 @@ void CartoonMessages::endMessage()
               << std::endl;
 }
 
-void CartoonMessages::mainMessage()
+void CartoonMessages::mainMessage(std::string message)
 {
     std::cout <<"this is the message from non pure virtual method" << std::endl;
 }

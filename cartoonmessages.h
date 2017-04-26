@@ -10,7 +10,7 @@ public:
     CartoonMessages();
     void startMessage();
     void endMessage();
-    void mainMessage();
+    void mainMessage(std::string message);
 };
 
 #endif // CARTOONMESSAGES_H
