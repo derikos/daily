@@ -16,6 +16,7 @@ class TestOnly
 public:
     TestOnly();
     std::string defaultMessage;
+    CartoonMessages* cartoonObject;
     void testCartoonMessages(std::string name = "Stugg");
     void userMessage();
     void userMessage(std::string defaultMsg);

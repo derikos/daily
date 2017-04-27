@@ -1,7 +1,8 @@
 #include "testonly.h"
 
 TestOnly::TestOnly()
-    : defaultMessage("Default Message")
+    : defaultMessage("Default Message"),
+      cartoonObject()
 {
 
 }
