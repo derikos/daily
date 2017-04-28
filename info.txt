@@ -28,3 +28,13 @@
 
 //    //TODO move some of these if not most of them into a class made for testing
 
+
+
+*************************
+Create a wrapper Class
+Create an operator overload to do 
+
+MyClass object;
+MyClass object2;
+
+object = object2;
