@@ -3,16 +3,25 @@
 #include "messagecentral.h"
 #include "cartoonmessages.h"
 #include "testonly.h"
+#include "algorithms.h"
 
 //using namespace std;
 
-int main(int argc, char *argv[])
+int main()
 {
     std::cout << "Fuck you,world!" << std::endl;
 
     TestOnly object;
     std::string mata = "ana a ramas fara mere";
+
+    int AnArray[6] = {6,5,0,3,2,1};
+    Algorithms testAlgorithms;
     object.userMessage(mata);
+//    testAlgorithms.insertionSorting(AnArray,6);
+//    testAlgorithms.selectionSorting(AnArray,6);
+//    testAlgorithms.printArray(AnArray,6);
+    testAlgorithms.bubbleSorting(AnArray,6);
+    testAlgorithms.printArray(AnArray,6);
 
 
     return 0;

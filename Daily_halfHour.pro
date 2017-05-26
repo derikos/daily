@@ -10,7 +10,8 @@ SOURCES += main.cpp \
     purerandom.cpp \
     derived.cpp \
     seccondlevel.cpp \
-    testonly.cpp
+    testonly.cpp \
+    algorithms.cpp
 
 HEADERS += \
     messages.h \
@@ -18,5 +19,6 @@ HEADERS += \
     cartoonmessages.h \
     purerandom.h \
     derived.h \
-    seccondlevel.h  
+    seccondlevel.h \  
+    algorithms.h
     testonly.h
