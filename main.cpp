@@ -15,10 +15,11 @@ int main()
     std::string mata = "ana a ramas fara mere";
 
     int AnArray[6] = {6,5,0,3,2,1};
-    Algorithms testAlgorithms;
+    Algorithms *testAlgorithms = new Algorithms;
     object.userMessage(mata);
-    testAlgorithms.bubbleSorting(AnArray,6);
-    testAlgorithms.printArray(AnArray,6);
+    testAlgorithms->bubbleSorting(AnArray,6);
+    testAlgorithms->printArray(AnArray,6);
+    delete testAlgorithms;
 
 
     return 0;
