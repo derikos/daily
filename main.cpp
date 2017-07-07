@@ -17,9 +17,6 @@ int main()
     int AnArray[6] = {6,5,0,3,2,1};
     Algorithms testAlgorithms;
     object.userMessage(mata);
-//    testAlgorithms.insertionSorting(AnArray,6);
-//    testAlgorithms.selectionSorting(AnArray,6);
-//    testAlgorithms.printArray(AnArray,6);
     testAlgorithms.bubbleSorting(AnArray,6);
     testAlgorithms.printArray(AnArray,6);
 
