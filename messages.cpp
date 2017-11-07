@@ -18,5 +18,15 @@ void messages::getMessage()
 
 void messages::setMessage(std::string toReplace)
 {
-     messageOne = toReplace;
+    messageOne = toReplace;
+}
+
+void messages::startMessage()
+{
+    std::cout<< "starts message"<<std::endl;
+}
+
+void messages::endMessage()
+{
+    std::cout << "ends message"<<std::endl;
 }

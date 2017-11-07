@@ -7,7 +7,7 @@
 
 CartoonMessages::CartoonMessages()
 {
-
+    std::cout << "CartoonMessages CTOR" << std::endl;
 }
 
 void CartoonMessages::startMessage()
@@ -27,4 +27,5 @@ void CartoonMessages::endMessage()
 void CartoonMessages::mainMessage(std::string message)
 {
     std::cout <<"this is the message from non pure virtual method" << std::endl;
+    std::cout << "message received as parrameter: " << message << std::endl;
 }

@@ -13,6 +13,8 @@ int main(int argc, char *argv[])
     TestOnly object;
     std::string mata = "ana a ramas fara mere";
     object.userMessage(mata);
+    messages mainMessage;
+    mainMessage.startMessage();
 
 
     return 0;

@@ -3,9 +3,9 @@
 
 #include <string>
 #include <iostream>
+#include "messagecentral.h"
 
-
-class messages
+class messages : public MessageCentral
 {
 public:
     messages();
@@ -15,6 +15,8 @@ private:
 public:
     void getMessage();
     void setMessage(std::string toReplace);
+    void startMessage();
+    void endMessage();
 };
 
 
