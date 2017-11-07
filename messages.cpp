@@ -30,3 +30,8 @@ void messages::endMessage()
 {
     std::cout << "ends message"<<std::endl;
 }
+
+void messages::classMessage()
+{
+    std::cout << "NO objects needed" << std::endl;
+}

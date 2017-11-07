@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
     messages mainMessage;
     mainMessage.startMessage();
 
-
+    //In order to access static class methods the correct accest is the namespace one i.e. "::"
+    messages::classMessage();
     return 0;
 }

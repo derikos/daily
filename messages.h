@@ -17,6 +17,7 @@ public:
     void setMessage(std::string toReplace);
     void startMessage();
     void endMessage();
+    static void classMessage();
 };
 
 
