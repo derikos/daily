@@ -64,7 +64,7 @@ int main()
 
 
     std::thread t1(print);
-//    int numarThreaduri = t1.hardware_concurrency();
+    //int numarThreaduri = t1.hardware_concurrency();
     t1.join();
 
     std::cout<<"t1.hardware_concurrency(): "<< t1.hardware_concurrency() <<std::endl;
