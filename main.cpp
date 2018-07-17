@@ -35,6 +35,11 @@ void print()
     std::thread t2(printAgain);
     t2.join();
 }
+
+void printParam()
+{
+    std::cout << "first param" <<std::endl;
+}
 int main()
 {
     std::cout << "Fuck you,world!" << std::endl;
@@ -69,7 +74,20 @@ int main()
 
     std::cout<<"t1.hardware_concurrency(): "<< t1.hardware_concurrency() <<std::endl;
 
+struct solution
+{
+    int alfa = 1;
+    int beta = 2;
+};
 
+
+solution structTest;
+std::cout<< structTest.beta <<std::endl;
+
+int aa = 1,bb,cc;
+
+(aa == 1) ? (printParam(),bb = aa) : (printParam(), cc = 2);
+std::cout << aa << bb << cc <<std::endl;
 
     return 0;
 }

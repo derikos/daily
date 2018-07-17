@@ -10,7 +10,6 @@ class messages : public MessageCentral
 public:
     messages();
 private:
-
     std::string messageOne;
 public:
     void getMessage();
@@ -18,6 +17,8 @@ public:
     void startMessage();
     void endMessage();
     static void classMessage();
+    static int myStatic;
+
 };
 
 

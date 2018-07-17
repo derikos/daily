@@ -2,9 +2,9 @@
 #include <iostream>
 #include <string>
 
+int messages::myStatic = 5;
 messages::messages()
     : messageOne("Finally")
-
 {
     std::cout<<messageOne<<std::endl;
     messageOne = "changed initial value";
