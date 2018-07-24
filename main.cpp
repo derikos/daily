@@ -9,6 +9,7 @@
 #include <algorithm>
 #include <thread>
 #include <pthread.h>
+#include "immortal.h"
 
 //using namespace std;
 
@@ -88,6 +89,8 @@ int aa = 1,bb,cc;
 
 (aa == 1) ? (printParam(),bb = aa) : (printParam(), cc = 2);
 std::cout << aa << bb << cc <<std::endl;
+
+ Immortal* onlyOne = Immortal::getInstance();
 
     return 0;
 }
