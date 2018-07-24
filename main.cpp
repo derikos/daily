@@ -10,6 +10,7 @@
 #include <thread>
 #include <pthread.h>
 #include "immortal.h"
+#include "singleton_p.h"
 
 //using namespace std;
 
@@ -91,6 +92,9 @@ int aa = 1,bb,cc;
 std::cout << aa << bb << cc <<std::endl;
 
  Immortal* onlyOne = Immortal::getInstance();
+ Singleton_P* mySingleton = Singleton_P::getInstance();
+ Singleton_P* mySeccondSingleton = Singleton_P::getInstance();
+
 
     return 0;
 }
