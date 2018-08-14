@@ -12,7 +12,14 @@ SOURCES += main.cpp \
     purerandom.cpp \
     derived.cpp \
     seccondlevel.cpp \
-    testonly.cpp
+    testonly.cpp \
+    immortal.cpp \
+    singleton_p.cpp \
+    subject.cpp \
+    observer.cpp \
+    stockgrabber.cpp \
+    operations.cpp \
+    stockobserver.cpp
 
 HEADERS += \
     messages.h \
@@ -20,5 +27,12 @@ HEADERS += \
     cartoonmessages.h \
     purerandom.h \
     derived.h \
-    seccondlevel.h  
+    seccondlevel.h \  
+    immortal.h \
+    singleton_p.h \
+    subject.h \
+    observer.h \
+    stockgrabber.h \
+    operations.h \
+    stockobserver.h
     testonly.h
