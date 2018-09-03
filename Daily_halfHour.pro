@@ -20,7 +20,9 @@ SOURCES += main.cpp \
     stockgrabber.cpp \
     operations.cpp \
     stockobserver.cpp \
-    engine.cpp
+    engine.cpp \
+    tree.cpp \
+    linkedlist.cpp
 
 HEADERS += \
     messages.h \
@@ -36,5 +38,7 @@ HEADERS += \
     stockgrabber.h \
     operations.h \
     stockobserver.h \
-    engine.h
+    engine.h \
+    tree.h \
+    linkedlist.h
     testonly.h

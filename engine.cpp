@@ -12,6 +12,8 @@
 #include <pthread.h>
 #include "immortal.h"
 #include "singleton_p.h"
+#include "operations.h"
+#include "linkedlist.h"
 
 Engine::Engine()
 {
@@ -63,23 +65,57 @@ void Engine::execute()
     std::cout << aa << bb << cc <<std::endl;
 
     Immortal* onlyOne = Immortal::getInstance();
+    (void) onlyOne;
     Singleton_P* mySingleton = Singleton_P::getInstance();
+    (void) mySingleton;
     Singleton_P* mySeccondSingleton = Singleton_P::getInstance();
+    (void) mySeccondSingleton;
 
+    int testIntegerContainer[] = {55,1,4,77,32,11,8,22,4,6,2};
+    std::cout << "Array before sorting " << std::endl;
+    Operations::PrintArray(testIntegerContainer,11);
+    Operations::MergeSort(testIntegerContainer,11);
+    std::cout << "Array after sorting " << std::endl;
+    Operations::PrintArray(testIntegerContainer,11);
+
+
+}
+
+void Engine::executeOperation()
+{
+    Operations myTestOperations;
+    std::vector<int> nums{3, 4, 2, 8, 15, 267};
+    std::vector<int> moreNums{3, 4, 5, 7, 2,2, 14, 2, 8, 15, 267,2,2,2,2,2,267};
+    std::vector<int> myResultNums = myTestOperations.missingNumbers(nums,moreNums);
+    for(uint i = 0;i < myResultNums.size();i++)
+    {
+        std::cout << myResultNums[i] << " "<<std::endl;
+    }
+}
+
+void Engine::executeList()
+{
+    LinkedList order;
+    for (int i = 1;i <= 10;i++)
+    {
+        order.addNode(i);
+    }
+    order.delete_position(4);
+    order.display();
 }
 
 void Engine::printAgain()
 {
     for(int i = 0;i < 10;i++)
     {
-        std::cout<<"From t2: "<<i<<std::endl;
+        std::cout <<"From t2: "<< i << std::endl;
     }
 
 }
 
 void Engine::print()
 {
-    for(int i = 0; i<= 100; i++)
+    for(int i = 0; i <= 100; i++)
     {
         std::cout<< "From t1: "<< i << std::endl;
     }

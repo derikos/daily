@@ -1,10 +1,11 @@
 #include <iostream>
 #include "engine.h"
+#include <thread>
 
 int main()
 {
-    Engine execEngine;
-    execEngine.execute();
+    std::thread engineTread(Engine::executeList);
+    engineTread.join();
 
     return 0;
 }
